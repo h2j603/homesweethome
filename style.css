@@ -101,7 +101,7 @@ mark {
     linear-gradient(to bottom, var(--color-2), transparent 3%),
     linear-gradient(to left,   var(--color-2), transparent 3%),
     linear-gradient(to right,  var(--color-2), transparent 3%);
-  pointer-events: none; /* 오버레이 뒤의 콘텐츠를 클릭할 수 있도록 합니다. */
+  pointer-events: none; 
   mix-blend-mode: hard-light;
 }
 
@@ -280,12 +280,12 @@ font-style: normal;
 td.web:hover {
   background-color: black;
   color: var(--color-3);
-  cursor: cursor; /* 마우스 올렸을 때 손가락 모양 */
+  cursor: cursor; 
 }
 
 a {
-  text-decoration: none ; /* 밑줄 제거 */
-  color: inherit;        /* 부모 요소의 색상 상속 */
+  text-decoration: none ; 
+  color: inherit;        
 }
 
 a:hover {
@@ -296,8 +296,13 @@ a:hover {
   display: none;   /* 기본적으로 안 보임 */
 }
 
+/* 이 부분을 추가 */
+#page1 {
+  display: block;
+}
+
 .page:target {
-  display: block;  /* 선택된 id만 보임 */
+  display: block;
 }
 
 a.titletext:hover {
