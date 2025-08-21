@@ -289,20 +289,27 @@ a {
 }
 
 a:hover {
-  filter: blur(4px) ; /* 밑줄 제거 */
+  filter: blur(4px) ; 
 }
 
 .page {
-  display: none;   /* 기본적으로 안 보임 */
+  display: none;   
 }
 
-/* 이 부분을 추가 */
+
 #page1 {
   display: block;
 }
 
+
 .page:target {
   display: block;
+}
+
+
+#page2:target ~ #page1,
+body:has(#page2:target) #page1 {
+  display: none !important;
 }
 
 a.titletext:hover {
